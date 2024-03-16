@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<input name="mioTesto" type="text" value="qui il tuo testo" size="40" maxlength="200" />
     <link rel="stylesheet" href="layout.css">
     <title>I Miei Compiti</title>
 </head>
@@ -14,26 +14,5 @@
     </form>
     <ul id="taskList">
     </ul>
-    <script>
-        document.getElementById("addButton").addEventListener("click", function() {
-            var taskInput = document.getElementById("taskInput");
-            var taskList = document.getElementById("taskList");
-            var taskText = taskInput.value;
-            if (taskText.trim() !== "") {
-                var li = document.createElement("li");
-                li.textContent = taskText;
-                
-                // Aggiungi la scritta desiderata all'interno della lista
-                var span = document.createElement("span");
-                span.textContent = " (Da fare)";
-                li.appendChild(span);
-                
-                taskList.appendChild(li);
-                taskInput.value = "";
-            } else {
-                alert("Inserisci un compito valido.");
-            }
-        });
-    </script>
 </body>
 </html>
