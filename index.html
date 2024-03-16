@@ -1,19 +1,59 @@
 <!DOCTYPE html>
-<html>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Miei Compiti</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #taskInput {
+            width: calc(100% - 80px); /* Sottrai il padding e il margine del pulsante */
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        #addButton {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #addButton:hover {
+            background-color: #45a049;
+        }
+        #taskList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #taskList li {
+            margin-bottom: 5px;
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
+
     <h1 style="text-align: center;">I Miei Compiti</h1>
     <form id="taskForm">
+        <form name="datiUtenti" action="paginaRisposta.php"method="GET">
         <input type="text" id="taskInput" placeholder="Aggiungi un nuovo compito">
         <button type="button" id="addButton">Aggiungi</button>
+        <form name="datiUtenti" action="paginaRisposta.php"method="POST">
     </form>
+    <ul id="taskList">     
     <ul id="taskList">
         <!-- Qui verranno inseriti i compiti -->
     </ul>
+
 </body>
 </html>
