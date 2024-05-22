@@ -17,6 +17,7 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            position: relative;
         }
         main {
             max-width: 800px;
@@ -39,17 +40,15 @@
             margin-bottom: 20px;
         }
         .contact-info {
-    	 text-align: center;
-   	 margin-top: 20px;
-   	 background-color: #333;
-   	 color: #fff;
-    	 width: 100%;
-	 position: relative;
-	 padding: 10px 0;
-	 align: center;
-	 
-	}
-	.button {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            position: relative;
+            padding: 10px 0;
+        }
+        .button {
             background-color: #d3d3d3;
             border: 1px solid #ccc;
             color: #000;
@@ -61,22 +60,36 @@
             cursor: pointer;
             border-radius: 0;
         }
-	   .button:hover {
+        .button:hover {
             background-color: #ccc;
-	   }
+        }
+        .title-container {
+            position: relative;
+        }
+        .button-container {
+            position: absolute;
+            bottom: -20px; /* Posiziona il pulsante sotto il titolo */
+            left: 0; /* Allinea il pulsante a sinistra */
+        }
+        .header-logo {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-	<div style="position: relative; BOTTOM:20PX;">
-        <h1>PRESTIGE MOTORS</h1>
-	</div>
-	<div style="position: relative; bottom: 90px;">
-	<a href="https://imgbb.com/"><img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="prestige-motors-removebg-preview" border="0" width="100" height="100" align="right" ></a>
-	</div>
+        <div class="title-container">
+            <h1>PRESTIGE MOTORS</h1>
+            <div class="button-container">
+                <a href="chi siamo.html" class="button">CHI SIAMO</a>
+            </div>
+        </div>
+        <div class="header-logo">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="prestige-motors-removebg-preview" border="0" width="100" height="100"></a>
+        </div>
     </header>
-	<P><B><A HREF="chi siamo.html" class="button">CHI SIAMO</A></B></P>
-	
     <main>
         <div class="site-intro">
             <p>BENVENUTI NELLA NOSTRA GALLERY DI MACCHINE, DOVE POTETE VEDERE LE MACCHINE E ANCHE DIVERTIRVI A VEDERE LE LORO CARATTERISTICHE</p>
@@ -84,18 +97,18 @@
         <section class="gallery">
             <div> 
                 <p><a href="2.html"><img src="https://japdivision.com.au/wp-content/uploads/2023/10/5_7329b7847e.jpg" alt="Macchina sportiva 1"></a></p>
-		<center>JDM</center>
+                <center>JDM</center>
             </div>
             <div>
                 <p><a href="sportive.html"><img src="https://cdn.motor1.com/images/mgl/nOpO1/s2/1992-ferrari-f40.webp" alt="Macchina sportiva 2"></a></p>
-		<center>SPORTIVE</center>
+                <center>SPORTIVE</center>
             </div>
             <div>
                 <p><a href="suv.html"><img src="https://www.patentati.it/listini-auto/foto/bmw-x6-m-41554_suv-5-doors-bmw-x6-competition-front-view.jpg" alt="Macchina sportiva 3"></a></p>
-		<center>SUV</center>
-            </div class="">
+                <center>SUV</center>
+            </div>
         </section>
-        <div class="contact-info" align="center">
+        <div class="contact-info">
             <p>Per maggiori informazioni, contattateci tramite:</p>
             <ul>
                 <li>Email: info@prestige_motors.com</li>
@@ -104,4 +117,5 @@
         </div>
     </main>
 </body>
-</html> 
+</html>
+
