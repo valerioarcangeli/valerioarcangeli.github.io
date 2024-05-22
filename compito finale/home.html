@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALLERY DI MACCHINE</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
         body {
-            font-family: verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #212121;
             color: #fff;
             text-align: center;
             padding: 20px 0;
             position: relative;
         }
         main {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -32,56 +33,93 @@
         .gallery img {
             width: 100%;
             height: auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
         .site-intro {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            font-size: 1.2em;
         }
         .contact-info {
             text-align: center;
             margin-top: 20px;
-            background-color: #333;
+            background-color: #212121;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             width: 100%;
             left: 0;
             right: 0;
-            box-sizing: border-box; 
+            box-sizing: border-box;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin: 5px 0;
         }
         .button {
-            background-color: #d3d3d3;
-            border: 1px solid #ccc;
-            color: #000;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
             padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
             cursor: pointer;
-            border-radius: 20px; 
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
         }
         .button:hover {
-            background-color: #2F4F4F;
+            background-color: #0056b3;
         }
         .title-container {
             position: relative;
         }
         .button-container {
             position: absolute;
-            bottom: -20px; 
-            left: 0; 
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .header-logo {
             position: absolute;
             bottom: 20px;
             right: 20px;
         }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        footer {
+            background-color: #212121;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
         <div class="title-container">
             <h1>PRESTIGE MOTORS</h1>
             <div class="button-container">
@@ -98,15 +136,15 @@
         </div>
         <section class="gallery">
             <div> 
-                <p><a href="2.html"><img src="https://japdivision.com.au/wp-content/uploads/2023/10/5_7329b7847e.jpg" alt="Macchina sportiva 1"></a></p>
+                <a href="2.html"><img src="https://japdivision.com.au/wp-content/uploads/2023/10/5_7329b7847e.jpg" alt="Macchina sportiva 1"></a>
                 <center>JDM</center>
             </div>
             <div>
-                <p><a href="sportive.html"><img src="https://cdn.motor1.com/images/mgl/nOpO1/s2/1992-ferrari-f40.webp" alt="Macchina sportiva 2"></a></p>
+                <a href="sportive.html"><img src="https://cdn.motor1.com/images/mgl/nOpO1/s2/1992-ferrari-f40.webp" alt="Macchina sportiva 2"></a>
                 <center>SPORTIVE</center>
             </div>
             <div>
-                <p><a href="suv.html"><img src="https://www.patentati.it/listini-auto/foto/bmw-x6-m-41554_suv-5-doors-bmw-x6-competition-front-view.jpg" alt="Macchina sportiva 3"></a></p>
+                <a href="suv.html"><img src="https://www.patentati.it/listini-auto/foto/bmw-x6-m-41554_suv-5-doors-bmw-x6-competition-front-view.jpg" alt="Macchina sportiva 3"></a>
                 <center>SUV</center>
             </div>
         </section>
@@ -118,5 +156,8 @@
             <li>Instagram: @prestige_motors</li>
         </ul>
     </div>
+    <footer>
+        <p>&copy; 2024 Prestige Motors. All rights reserved.</p>
+    </footer>
 </body>
 </html>
