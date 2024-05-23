@@ -16,7 +16,7 @@
             background-attachment: fixed;
             color: #333;
         }
-        main {
+        .content-wrapper {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -63,6 +63,34 @@
         .button:hover {
             background-color: #0056b3;
         }
+        .header-logo {
+            text-align: left;
+        }
+        .header-logo img {
+            width: 150px;
+            height: auto;
+        }
+        .social-icons {
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
         nav {
             background-color: #333;
             padding: 10px;
@@ -89,25 +117,38 @@
         <a href="contatti.html">Contatti</a>
     </nav>
     
-    <main>
-        <div class="site-intro">
-            <p>BENVENUTI NELLA NOSTRA GALLERY DI MACCHINE, DOVE POTETE VEDERE LE MACCHINE E ANCHE DIVERTIRVI A VEDERE LE LORO CARATTERISTICHE</p>
+    <div class="top-bar">
+        <div class="header-logo">
+            <a href="index.html"><img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="Prestige Motors"></a>
         </div>
-        <section class="gallery">
-            <div> 
-                <a href="2.html"><img src="5_7329b7847e-removebg-preview.png" alt="Macchina sportiva 1"></a>
-                <center>JDM</center>
+        <div class="social-icons">
+            <a href="https://www.instagram.com"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="Twitter"></a>
+        </div>
+    </div>
+    
+    <div class="content-wrapper">
+        <main>
+            <div class="site-intro">
+                <p>BENVENUTI NELLA NOSTRA GALLERY DI MACCHINE, DOVE POTETE VEDERE LE MACCHINE E ANCHE DIVERTIRVI A VEDERE LE LORO CARATTERISTICHE</p>
             </div>
-            <div>
-                <a href="sportive.html"><img src="images-removebg-preview.png" alt="Macchina sportiva 2"></a>
-                <center>SPORTIVE</center>
-            </div>
-            <div>
-                <a href="suv.html"><img src="bmw-x6-m-41554_suv-5-doors-bmw-x6-competition-front-view-removebg-preview%20(1).png" alt="Macchina sportiva 3"></a>
-                <center>SUV</center>
-            </div>
-        </section>
-    </main>
+            <section class="gallery">
+                <div> 
+                    <a href="2.html"><img src="5_7329b7847e-removebg-preview.png" alt="Macchina sportiva 1"></a>
+                    <center>JDM</center>
+                </div>
+                <div>
+                    <a href="sportive.html"><img src="images-removebg-preview.png" alt="Macchina sportiva 2"></a>
+                    <center>SPORTIVE</center>
+                </div>
+                <div>
+                    <a href="suv.html"><img src="bmw-x6-m-41554_suv-5-doors-bmw-x6-competition-front-view-removebg-preview%20(1).png" alt="Macchina sportiva 3"></a>
+                    <center>SUV</center>
+                </div>
+            </section>
+        </main>
+    </div>
     
 </body>
 </html>
