@@ -10,24 +10,18 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-image: url('https://example.com/background-image.jpg'); /* Replace with the actual URL of the background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #333;
-        }
-        header {
-            background-color: #212121;
-            color: #fff;
-            padding: 20px 0;
-            position: relative;
-            padding-top: 60px; /* Add padding to top to account for fixed nav */
-            text-align: left;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
         main {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to main content for readability */
+            border-radius: 10px;
         }
         .gallery {
             display: flex;
@@ -69,27 +63,6 @@
         .button:hover {
             background-color: #0056b3;
         }
-        .header-logo {
-            text-align: left;
-        }
-        .header-logo img {
-            width: 150px;
-            height: auto;
-        }
-        .social-icons {
-            text-align: left;
-            display: flex;
-            align-items: center;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            color: #fff;
-            text-decoration: none;
-        }
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-        }
         nav {
             background-color: #333;
             padding: 10px;
@@ -105,20 +78,6 @@
             text-decoration: none;
             font-size: 1em;
         }
-        footer {
-            background-color: #212121;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-        footer ul {
-            list-style: none;
-            padding: 0;
-        }
-        footer li {
-            margin: 5px 0;
-        }
     </style>
 </head>
 <body>
@@ -129,17 +88,6 @@
         <a href="chi siamo.html">Chi siamo</a>
         <a href="contatti.html">Contatti</a>
     </nav>
-    
-    <header>
-        <div class="header-logo">
-            <a href="index.html"><img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="Prestige Motors"></a>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.instagram.com"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook"></a>
-            <a href="https://www.twitter.com"><img src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="Twitter"></a>
-        </div>
-    </header>
     
     <main>
         <div class="site-intro">
@@ -161,8 +109,5 @@
         </section>
     </main>
     
-    <footer>
-        <p>&copy; 2024 Prestige Motors. All rights reserved.</p>
-    </footer>
 </body>
 </html>
