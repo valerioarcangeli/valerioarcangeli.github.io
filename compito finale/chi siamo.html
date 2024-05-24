@@ -46,6 +46,18 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        .custom-button {
+            display: inline-block;
+            background-color: #ff5722; /* Colore diverso */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .custom-button:hover {
+            background-color: #f4511e; /* Cambia colore al passaggio del mouse */
+        }
         a.custom-link {
             text-decoration: none; 
             color: #00796b; 
@@ -59,8 +71,8 @@
     <header>
         <h1>BENVENUTI NEL NOSTRO SHOWROOM DI AUTO DA SOGNO!</h1>
     </header>
-<div class="button" onclick="window.location.href='home.html';">
-    <p><b>HOME</b></p>
+<div>
+    <a href="home.html" class="custom-button">HOME</a>
 </div>
 <div class="padding-container">
     <section>
