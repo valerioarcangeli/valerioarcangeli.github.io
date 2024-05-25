@@ -1,1 +1,110 @@
-<a href="compito finale/home.html">HOME</a>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio di [Il Tuo Nome]</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro h2 {
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery div {
+            text-align: center;
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery div p {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9em;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio di [Il Tuo Nome]</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Benvenuti nel mio portfolio</h2>
+            <p>Qui potete trovare una raccolta dei miei compiti e progetti. Cliccate sulle immagini per vedere maggiori dettagli.</p>
+        </section>
+        
+        <section class="gallery">
+            <div> 
+                <a href="Home.html"><img alt="Prestige Motors"></a>
+                <p>Compito 1: Titolo del Compito 1</p>
+            </div>
+            <div>
+                <a href="compito2.html"><img src="compito2.png" alt="Compito 2"></a>
+                <p>Compito 2: Titolo del Compito 2</p>
+            </div>
+            <div>
+                <a href="compito3.html"><img src="compito3.png" alt="Compito 3"></a>
+                <p>Compito 3: Titolo del Compito 3</p>
+            </div>
+            <!-- Aggiungi altri compiti qui -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Il Tuo Nome]. Tutti i diritti riservati.</p>
+        <p>Email: [la tua email] | Telefono: [il tuo numero di telefono]</p>
+    </footer>
+</body>
+</html>
