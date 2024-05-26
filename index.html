@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio di [Il Tuo Nome]</title>
+    <title>Portfolio di Arcangeli</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
         body {
@@ -51,15 +51,20 @@
             box-sizing: border-box;
             margin-bottom: 20px;
         }
-        .gallery img {
+        .gallery button {
+            display: block;
             width: 100%;
-            height: auto;
+            padding: 10px;
+            border: none;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            background-color: #333;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        .gallery img:hover {
-            transform: scale(1.05);
+        .gallery button:hover {
+            background-color: #555;
         }
         .gallery div p {
             margin-top: 10px;
@@ -78,25 +83,23 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio di [Il Tuo Nome]</h1>
+        <h1>Portfolio di Arcangeli</h1>
     </header>
     <main>
         <section class="intro">
             <h2>Benvenuti nel mio portfolio</h2>
-            <p>Qui potete trovare una raccolta dei miei compiti e progetti. Cliccate sulle immagini per vedere maggiori dettagli.</p>
         </section>
-        
         <section class="gallery">
-            <div> 
-                <a href="Home.html"><img alt="Prestige Motors"></a>
+            <div>
+                <a href="Home.html"><button>Visualizza Compito 1</button></a>
                 <p>Compito 1: Titolo del Compito 1</p>
             </div>
             <div>
-                <a href="compito2.html"><img src="compito2.png" alt="Compito 2"></a>
+                <a href="compito2.html"><button>Visualizza Compito 2</button></a>
                 <p>Compito 2: Titolo del Compito 2</p>
             </div>
             <div>
-                <a href="compito3.html"><img src="compito3.png" alt="Compito 3"></a>
+                <a href="compito3.html"><button>Visualizza Compito 3</button></a>
                 <p>Compito 3: Titolo del Compito 3</p>
             </div>
             <!-- Aggiungi altri compiti qui -->
