@@ -1,227 +1,223 @@
-<!DOCTYPE html>
-<html lang="it">
+<!DOCTYPE html> <!-- Definisce il tipo di documento come HTML5 -->
+<html lang="it"> <!-- Imposta la lingua del documento su italiano -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specifiche Tecniche</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8"> <!-- Specifica la codifica dei caratteri come UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Imposta la viewport per garantire che la pagina sia ben visualizzata su dispositivi mobili -->
+    <title>Specifiche Tecniche</title> <!-- Titolo della pagina che appare nella scheda del browser -->
+    <link rel="stylesheet" href="../style.css"> <!-- Collegamento a un file di stile CSS esterno -->
     <style>
       body {
-            font-family: verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
+            font-family: verdana, sans-serif; /* Imposta il tipo di carattere per il corpo della pagina */
+            margin: 0; /* Rimuove il margine predefinito */
+            padding: 0; /* Rimuove il padding predefinito */
+            background-color: #f2f2f2; /* Imposta il colore di sfondo */
         }
         header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
+            background-color: #333; /* Imposta il colore di sfondo dell'intestazione */
+            color: #fff; /* Imposta il colore del testo dell'intestazione */
+            text-align: center; /* Centra il testo dell'intestazione */
+            padding: 20px 0; /* Imposta il padding sopra e sotto di 20px */
         }
         main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 800px; /* Imposta la larghezza massima del contenuto principale */
+            margin: 0 auto; /* Centra il contenuto principale orizzontalmente */
+            padding: 20px; /* Imposta il padding del contenuto principale */
         }
         section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #dcdcdc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            margin-bottom: 40px; /* Imposta il margine inferiore delle sezioni */
+            padding: 20px; /* Imposta il padding delle sezioni */
+            background-color: #dcdcdc; /* Imposta il colore di sfondo delle sezioni */
+            border-radius: 8px; /* Arrotonda gli angoli delle sezioni */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra alle sezioni */
+            overflow: hidden; /* Nasconde il contenuto che fuoriesce dalle sezioni */
         }
         h2 {
-            color: #333;
+            color: #333; /* Imposta il colore del testo per i titoli delle sezioni */
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: none; /* Rimuove i punti elenco */
+            padding: 0; /* Rimuove il padding predefinito */
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Imposta il margine inferiore degli elementi della lista */
         }
         img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            max-width: 100%; /* Imposta la larghezza massima delle immagini al 100% del contenitore */
+            height: auto; /* Mantiene le proporzioni originali dell'immagine */
+            border-radius: 5px; /* Arrotonda gli angoli delle immagini */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra alle immagini */
+            margin-bottom: 20px; /* Imposta il margine inferiore delle immagini */
         }
 	    .logo-social {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 40px 0;
+            display: flex; /* Utilizza il layout flexbox per il contenitore delle icone social e del logo */
+            justify-content: space-between; /* Spazia equamente tra gli elementi */
+            align-items: center; /* Allinea verticalmente gli elementi al centro */
+            margin: 40px 0; /* Imposta il margine sopra e sotto di 40px */
         }
         .logo {
-            text-align: center;
+            text-align: center; /* Centra il testo del logo */
         }
         .logo img {
-            width: 150px;
+            width: 150px; /* Imposta la larghezza dell'immagine del logo */
         }
 	    .social-icons {
-            display: flex;
-            gap: 20px;
+            display: flex; /* Utilizza il layout flexbox per le icone social */
+            gap: 20px; /* Imposta una distanza tra le icone social */
         }
         .social-icons a img {
-            width: 25px;
-            height: 25px;
-            transition: transform 0.3s ease;
+            width: 25px; /* Imposta la larghezza delle icone social */
+            height: 25px; /* Imposta l'altezza delle icone social */
+            transition: transform 0.3s ease; /* Aggiunge una transizione alla trasformazione */
         }
         .social-icons a img:hover {
-            transform: scale(1.1);
+            transform: scale(1.1); /* Ingrandisce leggermente l'icona al passaggio del mouse */
         }
-          .custom-button {
-            display: inline-block;
-            background-color: #616161; /* Colore grigio scuro */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+        .custom-button {
+            display: inline-block; /* Visualizza l'elemento come blocco in linea */
+            background-color: #616161; /* Colore grigio scuro del bottone */
+            color: #fff; /* Colore del testo */
+            padding: 10px 20px; /* Imposta il padding del bottone */
+            border-radius: 5px; /* Arrotonda gli angoli del bottone */
+            text-decoration: none; /* Rimuove la sottolineatura dai link */
+            transition: background-color 0.3s ease; /* Aggiunge una transizione al colore di sfondo */
         }
         .custom-button:hover {
             background-color: #757575; /* Cambia colore al passaggio del mouse */
         }
         a.custom-link {
-            text-decoration: none; 
-            color: #fff; 
+            text-decoration: none; /* Rimuove la sottolineatura dai link */
+            color: #fff; /* Imposta il colore del testo */
         }
         a.custom-link:hover {
-            text-decoration: underline; 
+            text-decoration: underline; /* Aggiunge una sottolineatura al passaggio del mouse */
         }
         .custom-button1 {
-            display: inline-block;
-            background-color: #616161; /* Colore grigio scuro */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            align-items: right;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            display: inline-block; /* Visualizza l'elemento come blocco in linea */
+            background-color: #616161; /* Colore grigio scuro del bottone */
+            color: #fff; /* Colore del testo */
+            padding: 10px 20px; /* Imposta il padding del bottone */
+            border-radius: 5px; /* Arrotonda gli angoli del bottone */
+            align-items: right; /* Allinea l'elemento a destra */
+            text-decoration: none; /* Rimuove la sottolineatura dai link */
+            transition: background-color 0.3s ease; /* Aggiunge una transizione al colore di sfondo */
         }
         .custom-button1:hover {
             background-color: #757575; /* Cambia colore al passaggio del mouse */
         }
         a.custom-link1 {
-            text-decoration: none; 
-            color: #fff; 
+            text-decoration: none; /* Rimuove la sottolineatura dai link */
+            color: #fff; /* Imposta il colore del testo */
         }
         a.custom-link1:hover {
-            text-decoration: underline; 
+            text-decoration: underline; /* Aggiunge una sottolineatura al passaggio del mouse */
         }
-         footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            font-size: 0.9em;
-            padding: 5px 0; 
-            margin-top: auto;
-            bottom: 0;
-            widt: 100%;
-        }
+        footer {
+            background-color: #333; /* Imposta il colore di sfondo del piè di pagina */
+            color: #fff; /* Imposta il colore del testo del piè di pagina */
+            text-align: center; /* Centra il testo nel piè di pagina */
+            font-size: 0.9em; /* Imposta la dimensione del testo */
+            padding: 5px 0; /* Imposta il padding sopra e sotto di 5px */
+            margin-top: auto; /* Aggiunge un margine superiore automatico */
+            bottom: 0; /* Posiziona il piè di pagina in basso */
+            width: 100%; /* Imposta la larghezza del piè di pagina al 100% */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>SPECIFICHE TECNICHE DEI SUV</h1>
+        <h1>SPECIFICHE TECNICHE DEI SUV</h1> <!-- Titolo principale della pagina -->
 	     <div class="logo">
-                <img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="Logo Prestige Motors">
+                <img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="Logo Prestige Motors"> <!-- Logo dell'azienda -->
             </div>
     </header>
 <div>
-    <b><a href="home.html" class="custom-button">HOME</a></b>
-    <b><a href="chi siamo.html" class="custom-button1">CHI SIAMO</a></b>
+    <b><a href="home.html" class="custom-button">HOME</a></b> <!-- Bottone per la pagina Home -->
+    <b><a href="chi siamo.html" class="custom-button1">CHI SIAMO</a></b> <!-- Bottone per la pagina Chi Siamo -->
 </div>
     <main>
-
-       <section>
-    <h2>Specifiche principali:</h2>
-    <ul>
-        <li>Modello: Ferrari Purosangue</li>
-        <li>Potenza: 680 CV</li>
-        <li>Velocità massima: 320 km/h</li>
-        <li>Cilindrata: 3.9 litri</li>
-        <li>Tipo di motore: V8</li>
-        <li>Cambio: Automatico a 8 marce</li>
-    </ul>
-    <img src="https://cdn.drivek.com/configurator-cover/cars/it/1600/FERRARI/PUROSANGUE/41365_SUV-5-DOORS/ferrari-purosangue-cover.jpg" alt="Ferrari Purosangue">
-</section>
-<section>
-    <h2>Specifiche principali:</h2>
-    <ul>
-        <li>Modello: Lamborghini Urus</li>
-        <li>Potenza: 650 CV</li>
-        <li>Velocità massima: 305 km/h</li>
-        <li>Cilindrata: 4.0 litri</li>
-        <li>Tipo di motore: V8</li>
-        <li>Cambio: Automatico a 8 marce</li>
-    </ul>
-    <img src="https://hd2.tudocdn.net/1119148?w=824&h=494" alt="Lamborghini Urus">
-</section>
-<section>
-    <h2>Specifiche principali:</h2>
-    <ul>
-        <li>Modello: Porsche Cayenne Turbo S</li>
-        <li>Potenza: 670 CV</li>
-        <li>Velocità massima: 295 km/h</li>
-        <li>Cilindrata: 4.0 litri</li>
-        <li>Tipo di motore: V8</li>
-        <li>Cambio: Automatico a 8 marce</li>
-    </ul>
-    <img src="https://www.sgommo.it/wp-content/uploads/2023/05/2023_Cayenne_Turbo_GT_4.jpg" alt="Porsche Cayenne Turbo S">
-</section>
-<section>
-    <h2>Specifiche principali:</h2>
-    <ul>
-        <li>Modello: Bentley Bentayga Speed</li>
-        <li>Potenza: 635 CV</li>
-        <li>Velocità massima: 306 km/h</li>
-        <li>Cilindrata: 6.0 litri</li>
-        <li>Tipo di motore: W12</li>
-        <li>Cambio: Automatico a 8 marce</li>
-    </ul>
-    <img src="https://www.millermotorcars.com/imagetag/6260/main/l/Used-2023-Bentley-Bentayga-Speed.jpg" alt="Bentley Bentayga Speed">
-</section>
-<section>
-    <h2>Specifiche principali:</h2>
-    <ul>
-        <li>Modello: Rolls-Royce Cullinan</li>
-        <li>Potenza: 571 CV</li>
-        <li>Velocità massima: 250 km/h</li>
-        <li>Cilindrata: 6.75 litri</li>
-        <li>Tipo di motore: V12</li>
-        <li>Cambio: Automatico a 8 marce</li>
-    </ul>
-    <img src="https://octane.rent/wp-content/uploads/2023/03/rolls-royce-cullinan-black-badge-white-1.jpg" alt="Rolls-Royce Cullinan">
-</section>
-<section>
-    <h2>Specifiche principali:</h2>
-    <ul>
-        <li>Modello: Mercedes-Benz G63 AMG</li>
-        <li>Potenza: 585 CV</li>
-        <li>Velocità massima: 220 km/h</li>
-        <li>Cilindrata: 4.0 litri</li>
-        <li>Tipo di motore: V8</li>
-        <li>Cambio: Automatico a 9 marce</li>
-    </ul>
-    <img src="https://prod-printler-front-as.azurewebsites.net/media/photo/159683.jpg?mode=crop&width=600&height=425&rnd=0.0.1" alt="Mercedes-Benz G63 AMG">
-</section>
-
-	<p><B>ABBIAMO TANTI MODELLI DI SUV VENITE NEL NOSTRO SHOW ROOM PER VEDERLE TUTTE</B></p>
-        </main>
-	   <footer>
+        <section>
+            <h2>Specifiche principali:</h2> <!-- Sottotitolo per la sezione -->
+            <ul>
+                <li>Modello: Ferrari Purosangue</li> <!-- Specifica del modello -->
+                <li>Potenza: 680 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 320 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 3.9 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: V8</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Automatico a 8 marce</li> <!-- Specifica del cambio -->
+            </ul>
+            <img src="https://cdn.drivek.com/configurator-cover/cars/it/1600/FERRARI/PUROSANGUE/41365_SUV-5-DOORS/ferrari-purosangue-cover.jpg" alt="Ferrari Purosangue"> <!-- Immagine del modello -->
+        </section>
+        <section>
+            <h2>Specifiche principali:</h2> <!-- Sottotitolo per la sezione -->
+            <ul>
+                <li>Modello: Lamborghini Urus</li> <!-- Specifica del modello -->
+                <li>Potenza: 650 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 305 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 4.0 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: V8</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Automatico a 8 marce</li> <!-- Specifica del cambio -->
+            </ul>
+            <img src="https://hd2.tudocdn.net/1119148?w=824&h=494" alt="Lamborghini Urus"> <!-- Immagine del modello -->
+        </section>
+        <section>
+            <h2>Specifiche principali:</h2> <!-- Sottotitolo per la sezione -->
+            <ul>
+                <li>Modello: Porsche Cayenne Turbo S</li> <!-- Specifica del modello -->
+                <li>Potenza: 670 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 295 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 4.0 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: V8</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Automatico a 8 marce</li> <!-- Specifica del cambio -->
+            </ul>
+            <img src="https://www.sgommo.it/wp-content/uploads/2023/05/2023_Cayenne_Turbo_GT_4.jpg" alt="Porsche Cayenne Turbo S"> <!-- Immagine del modello -->
+        </section>
+        <section>
+            <h2>Specifiche principali:</h2> <!-- Sottotitolo per la sezione -->
+            <ul>
+                <li>Modello: Bentley Bentayga Speed</li> <!-- Specifica del modello -->
+                <li>Potenza: 635 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 306 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 6.0 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: W12</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Automatico a 8 marce</li> <!-- Specifica del cambio -->
+            </ul>
+            <img src="https://www.millermotorcars.com/imagetag/6260/main/l/Used-2023-Bentley-Bentayga-Speed.jpg" alt="Bentley Bentayga Speed"> <!-- Immagine del modello -->
+        </section>
+        <section>
+            <h2>Specifiche principali:</h2> <!-- Sottotitolo per la sezione -->
+            <ul>
+                <li>Modello: Rolls-Royce Cullinan</li> <!-- Specifica del modello -->
+                <li>Potenza: 571 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 250 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 6.75 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: V12</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Automatico a 8 marce</li> <!-- Specifica del cambio -->
+            </ul>
+            <img src="https://octane.rent/wp-content/uploads/2023/03/rolls-royce-cullinan-black-badge-white-1.jpg" alt="Rolls-Royce Cullinan"> <!-- Immagine del modello -->
+        </section>
+        <section>
+            <h2>Specifiche principali:</h2> <!-- Sottotitolo per la sezione -->
+            <ul>
+                <li>Modello: Mercedes-Benz G63 AMG</li> <!-- Specifica del modello -->
+                <li>Potenza: 585 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 220 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 4.0 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: V8</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Automatico a 9 marce</li> <!-- Specifica del cambio -->
+            </ul>
+            <img src="https://prod-printler-front-as.azurewebsites.net/media/photo/159683.jpg?mode=crop&width=600&height=425&rnd=0.0.1" alt="Mercedes-Benz G63 AMG"> <!-- Immagine del modello -->
+        </section>
+	    <p><B>ABBIAMO TANTI MODELLI DI SUV VENITE NEL NOSTRO SHOW ROOM PER VEDERLE TUTTE</B></p> <!-- Testo evidenziato in grassetto -->
+    </main>
+    <footer>
         <div class="logo-social">
             <div class="social-icons">
-                <a href="https://www.facebook.com/?locale=it_IT"><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=ffffff" alt="Facebook"></a>
-                <a href="https://x.com/?lang=it"><img src="https://img.icons8.com/?size=100&id=437&format=png&color=ffffff" alt="Twitter"></a>
-                <a href="https://www.instagram.com"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=ffffff" alt="Instagram"></a>
+                <a href="https://www.facebook.com/?locale=it_IT"><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=ffffff" alt="Facebook"></a> <!-- Icona di Facebook con link -->
+                <a href="https://x.com/?lang=it"><img src="https://img.icons8.com/?size=100&id=437&format=png&color=ffffff" alt="Twitter"></a> <!-- Icona di Twitter con link -->
+                <a href="https://www.instagram.com"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=ffffff" alt="Instagram"></a> <!-- Icona di Instagram con link -->
             </div>
-        <p>&copy; 2024 Prestige Motors. Tutti i diritti riservati.</p>
-        <p>Via Roma 123, 00100 Roma, Italia | Telefono: +39 012 345 6789 | Email: info@prestigemotors.it</p>
+        <p>&copy; 2024 Prestige Motors. Tutti i diritti riservati.</p> <!-- Testo del copyright -->
+        <p>Via Roma 123, 00100 Roma, Italia | Telefono: +39 012 345 6789 | Email: info@prestigemotors.it</p> <!-- Informazioni di contatto -->
     </footer>
-    </main>
 </body>
 </html>
