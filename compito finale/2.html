@@ -1,230 +1,231 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specifiche Tecniche</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8"> <!-- Imposta la codifica dei caratteri a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Imposta la viewport per migliorare la visualizzazione su dispositivi mobili -->
+    <title>Specifiche Tecniche</title> <!-- Titolo della pagina -->
+    <link rel="stylesheet" href="../style.css"> <!-- Collegamento a un foglio di stile esterno -->
     <style>
         body {
-            font-family: verdana, sans-serif;
+            font-family: verdana, sans-serif; /* Imposta il font della pagina */
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #f2f2f2; /* Colore di sfondo grigio chiaro */
         }
         header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
+            background-color: #333; /* Colore di sfondo dell'intestazione */
+            color: #fff; /* Colore del testo dell'intestazione */
+            text-align: center; /* Allinea il testo al centro */
+            padding: 20px 0; /* Padding dell'intestazione */
         }
         main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 800px; /* Larghezza massima del contenuto principale */
+            margin: 0 auto; /* Margine automatico per centrare il contenuto */
+            padding: 20px; /* Padding del contenuto principale */
         }
         section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #dcdcdc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            margin-bottom: 40px; /* Margine inferiore delle sezioni */
+            padding: 20px; /* Padding delle sezioni */
+            background-color: #dcdcdc; /* Colore di sfondo delle sezioni */
+            border-radius: 8px; /* Angoli arrotondati delle sezioni */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra delle sezioni */
+            overflow: hidden; /* Nasconde il contenuto che eccede il box */
         }
         h2 {
-            color: #333;
+            color: #333; /* Colore del testo per gli heading */
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: none; /* Rimuove i punti elenco */
+            padding: 0; /* Rimuove il padding dagli elenchi */
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Margine inferiore degli elementi di lista */
         }
         img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            max-width: 100%; /* Larghezza massima delle immagini */
+            height: auto; /* Altezza automatica delle immagini */
+            border-radius: 5px; /* Angoli arrotondati delle immagini */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra delle immagini */
+            margin-bottom: 20px; /* Margine inferiore delle immagini */
         }
         .logo-social {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 40px 0;
+            display: flex; /* Imposta un layout flessibile */
+            justify-content: space-between; /* Spazio tra gli elementi */
+            align-items: center; /* Allinea gli elementi al centro */
+            margin: 40px 0; /* Margine della sezione logo-social */
         }
         .logo {
-            text-align: center;
+            text-align: center; /* Allinea il testo al centro */
         }
         .logo img {
-            width: 150px;
+            width: 150px; /* Larghezza dell'immagine del logo */
         }
         .social-icons {
-            display: flex;
-            gap: 20px;
+            display: flex; /* Imposta un layout flessibile */
+            gap: 20px; /* Spazio tra le icone social */
         }
         .social-icons a img {
-            width: 25px;
-            height: 25px;
-            transition: transform 0.3s ease;
+            width: 25px; /* Larghezza delle icone social */
+            height: 25px; /* Altezza delle icone social */
+            transition: transform 0.3s ease; /* Transizione per l'effetto hover */
         }
         .social-icons a img:hover {
-            transform: scale(1.1);
+            transform: scale(1.1); /* Effetto zoom quando si passa il mouse sulle icone social */
         }
-          .custom-button {
-            display: inline-block;
-            background-color: #616161; /* Colore grigio scuro */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+        .custom-button {
+            display: inline-block; /* Imposta il bottone come elemento inline-block */
+            background-color: #616161; /* Colore di sfondo del bottone */
+            color: #fff; /* Colore del testo del bottone */
+            padding: 10px 20px; /* Padding del bottone */
+            border-radius: 5px; /* Angoli arrotondati del bottone */
+            text-decoration: none; /* Rimuove la sottolineatura dei link */
+            transition: background-color 0.3s ease; /* Transizione per il cambio di colore di sfondo */
         }
         .custom-button:hover {
             background-color: #757575; /* Cambia colore al passaggio del mouse */
         }
         a.custom-link {
-            text-decoration: none; 
-            color: #fff; 
+            text-decoration: none; /* Rimuove la sottolineatura dei link */
+            color: #fff; /* Colore del testo del link */
         }
         a.custom-link:hover {
-            text-decoration: underline; 
+            text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
         }
         .custom-button1 {
-            display: inline-block;
-            background-color: #616161; /* Colore grigio scuro */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            align-items: right;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            display: inline-block; /* Imposta il bottone come elemento inline-block */
+            background-color: #616161; /* Colore di sfondo del bottone */
+            color: #fff; /* Colore del testo del bottone */
+            padding: 10px 20px; /* Padding del bottone */
+            border-radius: 5px; /* Angoli arrotondati del bottone */
+            align-items: right; /* Allinea il contenuto a destra */
+            text-decoration: none; /* Rimuove la sottolineatura dei link */
+            transition: background-color 0.3s ease; /* Transizione per il cambio di colore di sfondo */
         }
         .custom-button1:hover {
             background-color: #757575; /* Cambia colore al passaggio del mouse */
         }
         a.custom-link1 {
-            text-decoration: none; 
-            color: #fff; 
+            text-decoration: none; /* Rimuove la sottolineatura dei link */
+            color: #fff; /* Colore del testo del link */
         }
         a.custom-link1:hover {
-            text-decoration: underline; 
+            text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
         }
-         footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            font-size: 0.9em;
-            padding: 5px 0; 
-            margin-top: auto;
-            bottom: 0;
-            widt: 100%;
+        footer {
+            background-color: #333; /* Colore di sfondo del footer */
+            color: #fff; /* Colore del testo del footer */
+            text-align: center; /* Allinea il testo al centro */
+            font-size: 0.9em; /* Dimensione del font del footer */
+            padding: 5px 0; /* Padding del footer */
+            margin-top: auto; /* Margine superiore automatico */
+            bottom: 0; /* Posizione in basso */
+            widt: 100%; /* Larghezza del footer */
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>SPECIFICHE TECNICHE DELLE JDM</h1>
+        <h1>SPECIFICHE TECNICHE DELLE JDM</h1> <!-- Titolo principale della pagina -->
         <div class="logo">
-        <img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="Logo Prestige Motors">
+            <img src="https://i.ibb.co/r4H5sNg/prestige-motors-removebg-preview.png" alt="Logo Prestige Motors"> <!-- Immagine del logo -->
         </div>
     </header>
-<div>
-    <b><a href="home.html" class="custom-button">HOME</a></b>
-    <b><a href="chi siamo.html" class="custom-button1">CHI SIAMO</a></b>
-</div>
+    <div>
+        <b><a href="home.html" class="custom-button">HOME</a></b> <!-- Bottone per tornare alla pagina home -->
+        <b><a href="chi siamo.html" class="custom-button1">CHI SIAMO</a></b> <!-- Bottone per andare alla pagina "Chi Siamo" -->
+    </div>
     <main>
         <section>
-            <h2>Specifiche principali:</h2>
+            <h2>Specifiche principali:</h2> <!-- Titolo della sezione -->
             <ul>
-                <li>Modello: Nissan Skyline GT-R R34</li>
-                <li>Potenza: 276 CV</li>
-                <li>Velocità massima: 250 km/h</li>
-                <li>Cilindrata: 2.6 litri</li>
-                <li>Tipo di motore: Inline-6 twin-turbo</li>
-                <li>Cambio: Manuale a 6 marce</li>
+                <li>Modello: Nissan Skyline GT-R R34</li> <!-- Specifica del modello -->
+                <li>Potenza: 276 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 250 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 2.6 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: Inline-6 twin-turbo</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Manuale a 6 marce</li> <!-- Specifica del cambio -->
             </ul>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg/640px-Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg" alt="Nissan Skyline GT-R R34">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg/640px-Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg" alt="Nissan Skyline GT-R R34"> <!-- Immagine del modello -->
         </section>
 
         <section>
-            <h2>Specifiche principali:</h2>
+            <h2>Specifiche principali:</h2> <!-- Titolo della sezione -->
             <ul>
-                <li>Modello: Toyota Supra MK4</li>
-                <li>Potenza: 320 CV</li>
-                <li>Velocità massima: 250 km/h</li>
-                <li>Cilindrata: 3.0 litri</li>
-                <li>Tipo di motore: Inline-6 twin-turbo</li>
-                <li>Cambio: Manuale o automatico a 4 marce</li>
+                <li>Modello: Toyota Supra MK4</li> <!-- Specifica del modello -->
+                <li>Potenza: 320 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 250 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 3.0 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: Inline-6 twin-turbo</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Manuale o automatico a 4 marce</li> <!-- Specifica del cambio -->
             </ul>
-            <img src="https://i.etsystatic.com/40475019/r/il/34e632/4831033008/il_fullxfull.4831033008_qkz8.jpg" alt="Toyota Supra MK4">
+            <img src="https://i.etsystatic.com/40475019/r/il/34e632/4831033008/il_fullxfull.4831033008_qkz8.jpg" alt="Toyota Supra MK4"> <!-- Immagine del modello -->
         </section>
 
         <section>
-            <h2>Specifiche principali:</h2>
+            <h2>Specifiche principali:</h2> <!-- Titolo della sezione -->
             <ul>
-                <li>Modello: Mazda RX-7 FD</li>
-                <li>Potenza: 276 CV</li>
-                <li>Velocità massima: 250 km/h</li>
-                <li>Cilindrata: 1.3 litri</li>
-                <li>Tipo di motore: Wankel twin-turbo</li>
-                <li>Cambio: Manuale a 5 marce</li>
+                <li>Modello: Mazda RX-7 FD</li> <!-- Specifica del modello -->
+                <li>Potenza: 276 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 250 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 1.3 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: Wankel twin-turbo</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Manuale a 5 marce</li> <!-- Specifica del cambio -->
             </ul>
-            <img src="https://japdivision.com.au/wp-content/uploads/2023/10/5_7329b7847e.jpg" alt="Mazda RX-7 FD">
+            <img src="https://japdivision.com.au/wp-content/uploads/2023/10/5_7329b7847e.jpg" alt="Mazda RX-7 FD"> <!-- Immagine del modello -->
         </section>
 
         <section>
-            <h2>Specifiche principali:</h2>
+            <h2>Specifiche principali:</h2> <!-- Titolo della sezione -->
             <ul>
-                <li>Modello: Mitsubishi Lancer Evolution IX</li>
-                <li>Potenza: 286 CV</li>
-                <li>Velocità massima: 250 km/h</li>
-                <li>Cilindrata: 2.0 litri</li>
-                <li>Tipo di motore: Inline-4 turbo</li>
-                <li>Cambio: Manuale a 6 marce</li>
+                <li>Modello: Mitsubishi Lancer Evolution IX</li> <!-- Specifica del modello -->
+                <li>Potenza: 286 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 250 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 2.0 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: Inline-4 turbo</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Manuale a 6 marce</li> <!-- Specifica del cambio -->
             </ul>
-            <img src="https://cdn.motor1.com/images/mgl/WwYrN/s1/mitsubishi-lancer-evo-v.webp" alt="Mitsubishi Lancer Evolution IX">
+            <img src="https://cdn.motor1.com/images/mgl/WwYrN/s1/mitsubishi-lancer-evo-v.webp" alt="Mitsubishi Lancer Evolution IX"> <!-- Immagine del modello -->
         </section>
 
         <section>
-            <h2>Specifiche principali:</h2>
+            <h2>Specifiche principali:</h2> <!-- Titolo della sezione -->
             <ul>
-                <li>Modello: Subaru Impreza WRX STI</li>
-                <li>Potenza: 300 CV</li>
-                <li>Velocità massima: 255 km/h</li>
-                <li>Cilindrata: 2.5 litri</li>
-                <li>Tipo di motore: Boxer-4 turbo</li>
-                <li>Cambio: Manuale a 6 marce</li>
+                <li>Modello: Subaru Impreza WRX STI</li> <!-- Specifica del modello -->
+                <li>Potenza: 300 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 255 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 2.5 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: Boxer-4 turbo</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Manuale a 6 marce</li> <!-- Specifica del cambio -->
             </ul>
-            <img src="https://cdn.veloce.it/wp-content/uploads/webp/2023/09/subaru-impreza-wrx-25.webp" alt="Subaru Impreza WRX STI">
+            <img src="https://cdn.veloce.it/wp-content/uploads/webp/2023/09/subaru-impreza-wrx-25.webp" alt="Subaru Impreza WRX STI"> <!-- Immagine del modello -->
         </section>
 
         <section>
-            <h2>Specifiche principali:</h2>
+            <h2>Specifiche principali:</h2> <!-- Titolo della sezione -->
             <ul>
-                <li>Modello: Nissan Silvia S15</li>
-                <li>Potenza: 250 CV</li>
-                <li>Velocità massima: 240 km/h</li>
-                <li>Cilindrata: 2.0 litri</li>
-                <li>Tipo di motore: Inline-4 turbo</li>
-                <li>Cambio: Manuale a 5 marce</li>
+                <li>Modello: Nissan Silvia S15</li> <!-- Specifica del modello -->
+                <li>Potenza: 250 CV</li> <!-- Specifica della potenza -->
+                <li>Velocità massima: 240 km/h</li> <!-- Specifica della velocità massima -->
+                <li>Cilindrata: 2.0 litri</li> <!-- Specifica della cilindrata -->
+                <li>Tipo di motore: Inline-4 turbo</li> <!-- Specifica del tipo di motore -->
+                <li>Cambio: Manuale a 5 marce</li> <!-- Specifica del cambio -->
             </ul>
-            <img src="https://i.etsystatic.com/43510796/r/il/02760a/4953646761/il_fullxfull.4953646761_6q52.jpg" alt="Nissan Silvia S15">
+            <img src="https://i.etsystatic.com/43510796/r/il/02760a/4953646761/il_fullxfull.4953646761_6q52.jpg" alt="Nissan Silvia S15"> <!-- Immagine del modello -->
         </section>
 
-        <p><b>ABBIAMO TANTI MODELLI DI JDM VENITE NEL NOSTRO SHOW ROOM PER VEDERLE TUTTE</b></p>
-</main>
-        <footer>
+        <p><b>ABBIAMO TANTI MODELLI DI JDM VENITE NEL NOSTRO SHOW ROOM PER VEDERLE TUTTE</b></p> <!-- Messaggio promozionale -->
+    </main>
+    <footer>
         <div class="logo-social">
             <div class="social-icons">
-                <a href="https://www.facebook.com/?locale=it_IT"><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=ffffff" alt="Facebook"></a>
-                <a href="https://x.com/?lang=it"><img src="https://img.icons8.com/?size=100&id=437&format=png&color=ffffff" alt="Twitter"></a>
-                <a href="https://www.instagram.com"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=ffffff" alt="Instagram"></a>
+                <a href="https://www.facebook.com/?locale=it_IT"><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=ffffff" alt="Facebook"></a> <!-- Link e icona Facebook -->
+                <a href="https://x.com/?lang=it"><img src="https://img.icons8.com/?size=100&id=437&format=png&color=ffffff" alt="Twitter"></a> <!-- Link e icona Twitter -->
+                <a href="https://www.instagram.com"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=ffffff" alt="Instagram"></a> <!-- Link e icona Instagram -->
             </div>
-        <p>&copy; 2024 Prestige Motors. Tutti i diritti riservati.</p>
-        <p>Via Roma 123, 00100 Roma, Italia | Telefono: +39 012 345 6789 | Email: info@prestigemotors.it</p>
+            <p>&copy; 2024 Prestige Motors. Tutti i diritti riservati.</p> <!-- Copyright -->
+            <p>Via Roma 123, 00100 Roma, Italia | Telefono: +39 012 345 6789 | Email: info@prestigemotors.it</p> <!-- Informazioni di contatto -->
+        </div>
     </footer>
 </body>
 </html>
